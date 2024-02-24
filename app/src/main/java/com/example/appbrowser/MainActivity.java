@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
         siti.put(new Item("Google", R.drawable.google_logo), "https://www.google.com");
         siti.put(new Item("StackOverflow", R.drawable.stack_overflow_logo), "https://stackoverflow.com/");
         siti.put(new Item("Java Docs", R.drawable.java_logo), "https://docs.oracle.com/en/java/");
+        siti.put(new Item("GitHub", R.drawable.github_logo), "https://github.com/");
+        siti.put(new Item("BootStrap", R.drawable.bootstrap_logo), "https://getbootstrap.com/");
+        siti.put(new Item("Wikipedia", R.drawable.wikipedia_logo), "https://it.wikipedia.org/wiki/Pagina_principale");
+        siti.put(new Item("ChatGPT", R.drawable.chatgpt_logo), "https://chat.openai.com/");
+        siti.put(new Item("Reddit", R.drawable.reddit_logo), "https://www.redditinc.com/");
+
         int[] imgSiti = new int[siti.size()];
         String[] nomiSiti = new String[siti.size()];
         int i = 0;
