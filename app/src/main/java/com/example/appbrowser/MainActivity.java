@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         listaSitiView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            startActivity(new Intent(MainActivity.this, WebActivity.class).putExtra("URL", siti.get(new Item(nomiSiti[position], imgSiti[position]))));
+                String url = siti.get(new Item(nomiSiti[position], imgSiti[position]));
+                Log.d("URL_CLICKED", "URL: " + url);
+                startActivity(new Intent(MainActivity.this, WebActivity.class).putExtra("URL", url));
             }
         });
     }

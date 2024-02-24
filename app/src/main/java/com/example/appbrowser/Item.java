@@ -1,5 +1,7 @@
 package com.example.appbrowser;
 
+import java.util.Objects;
+
 public class Item {
     private int img;
     private String name;
@@ -16,6 +18,7 @@ public class Item {
     public String getName() {
         return name;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
